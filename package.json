@@ -1,0 +1,39 @@
+{
+  "name": "runtime-qa-traceability-graph",
+  "version": "0.1.0",
+  "description": "CLI-first runtime QA traceability graph generator.",
+  "type": "module",
+  "bin": {
+    "runtime-qa-traceability-graph": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "analyze": "npm run build --silent && node dist/cli/index.js",
+    "test": "npm run build --silent",
+    "test:generated-ui": "playwright test -c playwright.generated.config.ts",
+    "test:generated-api": "playwright test -c playwright.generated-api.config.ts",
+    "execute:generated": "npm run build --silent && node dist/execution/executeGenerated.js"
+  },
+  "keywords": [
+    "qa",
+    "traceability",
+    "playwright",
+    "testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.61.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "allowScripts": {
+    "fsevents@2.3.2": true
+  }
+}
