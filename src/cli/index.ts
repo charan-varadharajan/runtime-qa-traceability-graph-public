@@ -1,4 +1,9 @@
 #!/usr/bin/env node
+/**
+ * Runtime QA Traceability Graph
+ * Copyright (c) 2026 Charan Varadharajan.
+ * All rights reserved.
+ */
 
 import { mkdir, readdir, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";

@@ -1,3 +1,9 @@
+/**
+ * Runtime QA Traceability Graph
+ * Copyright (c) 2026 Charan Varadharajan.
+ * All rights reserved.
+ */
+
 const BLOCKED_PROTOCOLS = new Set(["mailto:", "tel:", "javascript:"]);
 
 const DOWNLOAD_EXTENSIONS = new Set([

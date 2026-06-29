@@ -1,3 +1,9 @@
+/**
+ * Runtime QA Traceability Graph
+ * Copyright (c) 2026 Charan Varadharajan.
+ * All rights reserved.
+ */
+
 import { chromium, type Browser, type Page } from "playwright";
 import type {
   BasicActionClassification,

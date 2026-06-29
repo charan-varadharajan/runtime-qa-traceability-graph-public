@@ -2,6 +2,14 @@
 
 A CLI-first TypeScript tool that will progressively analyze a website URL and produce runtime QA artifacts such as crawl output, DOM/action inventories, network/API inventories, flow graphs, scenarios, test cases, generated Playwright scripts, traceability JSON, and HTML reports.
 
+## License / Usage
+
+This repository is publicly visible as a portfolio and research prototype.
+
+Copyright (c) 2026 Charan Varadharajan. All rights reserved.
+
+You may view, clone, and run this project for evaluation purposes. Reuse, redistribution, commercial use, or derivative work is not permitted without written permission.
+
 The current implementation validates a URL, attempts a best-effort authenticated session through provided credentials or visible registration, crawls same-origin pages, extracts visible DOM/action inventory, captures page-load network/API inventory, builds a runtime QA flow graph, infers business scenarios, generates deterministic manual test cases, classifies automation feasibility, generates Playwright UI test scripts, generates API smoke tests, builds QA traceability JSON, and writes run metadata.
 
 ## Install

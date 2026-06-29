@@ -1,3 +1,9 @@
+/**
+ * Runtime QA Traceability Graph
+ * Copyright (c) 2026 Charan Varadharajan.
+ * All rights reserved.
+ */
+
 import { chromium, type Browser, type BrowserContext, type Page } from "playwright";
 import type { CrawlAuthSession, CrawledPage, CrawlResult, SkippedUrl } from "../types/index.js";
 import { isSameOrigin, normalizeUrl } from "../utils/urlUtils.js";
